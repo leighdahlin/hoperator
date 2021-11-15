@@ -37,13 +37,9 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <Router>
-        <Routes>
-          <Route path="/">
-            
-          </Route>
-        </Routes>
-        </Router>
+      <div>
+        <h1>The Hopperator</h1>
+      </div>
       </ApolloProvider>
     
   );
