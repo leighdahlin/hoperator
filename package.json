@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/leighdahlin/hoperator#readme",
   "dependencies": {
-    "concurrently": "^6.3.0"
+    "@material-ui/icons": "^4.11.2",
+    "concurrently": "^6.3.0",
+    "material-ui-icons": "^1.0.0-beta.36"
   }
 }

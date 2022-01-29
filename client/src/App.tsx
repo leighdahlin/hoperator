@@ -13,6 +13,9 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 
 import Auth from './utils/auth';
 
+import Navbar from './components/General/Navbar';
+import Home from './pages/Home';
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -36,12 +39,14 @@ const client = new ApolloClient({
 
 function App() {
   return (
-    <ApolloProvider client={client}>
-      <div>
-        <h1>The Hopperator</h1>
-      </div>
-      </ApolloProvider>
-    
+      <ApolloProvider client={client}>
+      <Router>
+        <Navbar />
+      <Routes>
+          <Route path="/" element={<Home />}/ >
+      </Routes>
+      </Router>
+      </ApolloProvider>    
   );
 }
 
